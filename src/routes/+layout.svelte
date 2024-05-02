@@ -9,5 +9,14 @@
 
 <Sidebar bind:open />
 <Navbar bind:open />
-<slot />
-<Footer />
+
+<div class:open>
+	<slot />
+	<Footer />
+</div>
+
+<style>
+	.open {
+		display: none;
+	}
+</style>
