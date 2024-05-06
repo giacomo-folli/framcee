@@ -7,8 +7,8 @@
 	let open: boolean = false;
 </script>
 
-<Sidebar bind:open />
 <Navbar bind:open />
+<Sidebar bind:open />
 
 <div class:open>
 	<slot />
@@ -17,6 +17,7 @@
 
 <style>
 	.open {
-		display: none;
+		z-index: -1;
+		position: fixed;
 	}
 </style>

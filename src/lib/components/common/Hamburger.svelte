@@ -3,11 +3,11 @@
 </script>
 
 <button
-	class="text-gray-500 hover:text-gray-700 cursor-pointer pt-3 border-none focus:outline-none"
+	class="text-gray-700 hover:text-gray-800 cursor-pointer border-none focus:outline-none"
 	class:open
 	on:click={() => (open = !open)}
 >
-	<svg width="40" height="40">
+	<svg width="30" height="25">
 		<line id="top" x1="0" y1="2" x2="32" y2="2" />
 		<line id="middle" x1="0" y1="12" x2="32" y2="12" />
 		<line id="bottom" x1="0" y1="22" x2="32" y2="22" />
