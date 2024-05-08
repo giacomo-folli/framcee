@@ -1,19 +1,42 @@
-<div class="w-full pt-20 pb-6 text-center text-3xl">Classi</div>
-<main class="p-4 pt-2 h-[40vh] text-slate-300">
-	<svg height="200px" width="100%">
-		<line x1="0" y1="4" x2="400" y2="4" />
-		<line x1="0" y1="34" x2="200" y2="34" />
-		<line x1="0" y1="64" x2="300" y2="64" />
-		<line x1="0" y1="94" x2="280" y2="94" />
-		<line x1="0" y1="124" x2="200" y2="124" />
-		<line x1="0" y1="154" x2="300" y2="154" />
-		<line x1="0" y1="184" x2="280" y2="184" />
-	</svg>
-</main>
+<script lang="ts">
+	import { slide } from 'svelte/transition';
 
-<style>
-	svg line {
-		stroke: currentColor;
-		stroke-width: 15;
-	}
-</style>
+	let faqs: {
+		id: number;
+		title: string;
+		answer: string;
+		active: boolean;
+	}[] = [
+		{ id: 1, title: 'string', answer: 'string', active: false },
+		{ id: 1, title: 'string', answer: 'string', active: false },
+		{ id: 1, title: 'string', answer: 'string', active: false },
+		{ id: 2, title: 'string', answer: 'string', active: false }
+	];
+</script>
+
+<div class="w-full pt-20 pb-6 text-center text-3xl">Classi</div>
+<main class="p-4 pt-2">
+	{#each faqs as quest, i}
+		<div class="active rounded-lg mt-6">
+			<button
+				on:click={() => (quest.active = !quest.active)}
+				class="p-4 lg:p-6 w-full text-start flex justify-between items-center cursor-pointer"
+			>
+				<span>Lorem ipsum dolor sit amet?</span>
+				<span class="transition fas fa-chevron-up {quest.active ? 'rotate-180' : ''}"></span>
+			</button>
+			{#if quest.active}
+				<div
+					class="p-4 lg:p-6 shadow dark:shadow-none dark:bg-[#1E2735] rounded-xl"
+					transition:slide
+				>
+					<p class="">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+					</p>
+				</div>
+			{/if}
+		</div>
+	{/each}
+</main>
