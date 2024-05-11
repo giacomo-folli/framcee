@@ -1,46 +1,45 @@
 <script lang="ts"></script>
 
-<section class="relative pt-8 pb-14">
+<section class="relative">
 	<div
 		class="absolute top-0 left-0 h-full w-full z-[-1] bg-cover bg-no-repeat filter sepia contrast-50"
 		style:background-image="url(/homepage.jpg)"
 	/>
 
-	<div class="lg:grid lg:grid-cols-[50%_50%]">
+	<div class="flex flex-col lg:flex-row justify-between min-h-[100vh] pt-20 pb-4">
 		<div id="slogan" class="mx-auto p-1 py-14 lg:p-10 lg:mt-8">
-			<div class="text-sm lg:text-[1vw] px-6">
-				A group of humans seeking to learn, experience, explore, live & laugh via a physical
-				movement practice.
+			<div class="text-xs lg:text-[1vw] px-6">
+				Impara, esplora e conosci te stesso attraverso le pratiche del movimento. 
 			</div>
 
 			<div
-				class="mx-auto text-[20vw] lg:text-[10vw] font-semibold leading-none whitespace-pre-wrap px-6"
+				class="w-full text-center text-[20vw] lg:text-[10vw] font-semibold leading-none whitespace-pre-wrap"
 			>
-				LONDON
+				PHYSICAL
 			</div>
 			<div
-				class="mx-auto pt-2 text-[13vw] lg:text-[7vw] tracking-widest lg:tracking-wider leading-[10vw] font-semibold whitespace-pre-wrap px-6"
+				class="w-full text-center pt-2 text-[14vw] lg:text-[7vw] tracking-widest lg:tracking-wider leading-[7vw] lg:leading-[4vw] font-semibold whitespace-pre-wrap"
 			>
 				MOVEMENT
 			</div>
 			<div
-				class="mx-auto text-[26vw] lg:text-[13vw] -tracking-wider leading-none font-semibold whitespace-pre-wrap px-6"
+				class="w-full text-center text-[23vw] lg:text-[13vw]  leading-none font-semibold whitespace-pre-wrap"
 			>
-				GROUP
+				GROUPS
 			</div>
 
 			<div class="w-full px-6 text-sm lg:text-[2vw] tracking-normal italic">
-				Inclusive. Connected. Supportive. Learning. Alive.
+				Comunità. Supporto. Crescita. Esperienza.
 			</div>
 		</div>
 
 		<div class="mt-8 flex justify-end lg:p-16">
-			<div class="px-4 h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
+			<div class="mb-6 mr-2 h-[150px] w-[150px] lg:h-[400px] lg:w-[400px]">
 				<img src="/logo.png" alt="log" />
 				<div
-					class="py-3 underline underline-offset-4 text-[5vw] lg:text-lg tracking-wide lg:tracking-wider lg:text-right"
+					class="bg-white bg-opacity-75 px-1 pb-1 text-right underline underline-offset-4 text-[5vw] lg:text-lg tracking-wide lg:tracking-wider lg:text-right"
 				>
-					<a href="/classi"> book a class now &rarr; </a>
+					<a href="/classi"> prenota ora &rarr; </a>
 				</div>
 			</div>
 		</div>
