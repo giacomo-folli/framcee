@@ -1,115 +1,127 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import Armonica from '$lib/components/common/Armonica.svelte';
+	import Card from '$lib/components/common/Card.svelte';
+</script>
 
 <section class="relative">
-	<div
-		class="absolute top-0 left-0 h-full w-full z-[-1] bg-cover bg-no-repeat filter sepia contrast-50"
-		style:background-image="url(/homepage.jpg)"
-	/>
+	<div class="flex flex-col lg:flex-row justify-center items-center min-h-[100vh] pt-4 pb-4">
+		<div id="slogan" class="text-center text-[12vw] lg:text-[5vw] font-semibold leading-tight">
+			“Ritorna in controllo <br /> del tuo corpo”
+		</div>
+	</div>
+</section>
 
-	<div class="flex flex-col lg:flex-row justify-between min-h-[100vh] pt-20 pb-4">
-		<div id="slogan" class="mx-auto p-1 py-14 lg:p-10 lg:mt-8">
-			<div class="text-xs lg:text-[1vw] px-6">
-				Impara, esplora e conosci te stesso attraverso le pratiche del movimento. 
-			</div>
-
-			<div
-				class="w-full text-center text-[20vw] lg:text-[10vw] font-semibold leading-none whitespace-pre-wrap"
-			>
-				PHYSICAL
-			</div>
-			<div
-				class="w-full text-center pt-2 text-[14vw] lg:text-[7vw] tracking-widest lg:tracking-wider leading-[7vw] lg:leading-[4vw] font-semibold whitespace-pre-wrap"
-			>
-				MOVEMENT
-			</div>
-			<div
-				class="w-full text-center text-[23vw] lg:text-[13vw]  leading-none font-semibold whitespace-pre-wrap"
-			>
-				GROUPS
-			</div>
-
-			<div class="w-full px-6 text-sm lg:text-[2vw] tracking-normal italic">
-				Comunità. Supporto. Crescita. Esperienza.
+<section class="relative px-[18px] py-14 md:pt-24">
+	<section class="light lg:pb-0 bg-white text-zinc-900">
+		<div class="container px-4">
+			<div class="grid grid-cols-12 md:gap-8">
+				<div class="col-span-12 lg:col-span-6">
+					<div class="flex justify-center items-center relative h-[500px]">
+						<img src="/logo.png" class="max-w-full h-[500px] rounded-xl" alt="aa" />
+					</div>
+				</div>
+				<div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
+					<div>
+						<h3 class="text-2xl md:text-base">Chi sono</h3>
+						<h2 class="text-2xl font-bold leading-none md:text-5xl md:leading-none mb-6">
+							Francesco, la mia storia
+						</h2>
+						<p
+							class="text-base sm:text-lg leading-relaxed tracking-wide break-words mt-4 md:mt-12 opacity-75"
+						>
+							I am a website designer from Lousiana, with a strong focus in UI/UX design. I love to
+							get new experiences and always learn from my surroundings. I've done more than 285
+							projects. You can check it through portfolio section on this website. I looking
+							forward to any opportunities and challenges. Ex velit cupidatat magna voluptate
+							deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt
+							irure. I look forward to any opportunities and challenges.
+						</p>
+						<div class="grid grid-cols-12">
+							<div class="col-span-12 lg:col-span-4">
+								<button
+									class="py-3 px-7 text-white bg-blue-600 hover:text-white hover:bg-opacity-90 mt-12 w-full rounded-md"
+								>
+									Read More
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
+</section>
 
-		<div class="mt-8 flex justify-end lg:p-16">
-			<div class="mb-6 mr-2 h-[150px] w-[150px] lg:h-[400px] lg:w-[400px]">
-				<img src="/logo.png" alt="log" />
-				<div
-					class="bg-white bg-opacity-75 px-1 pb-1 text-right underline underline-offset-4 text-[5vw] lg:text-lg tracking-wide lg:tracking-wider lg:text-right"
-				>
-					<a href="/classi"> prenota ora &rarr; </a>
+<section class="px-[18px] mt-4 mb-20">
+	<h2 class="text-lg text-center font-bold leading-none md:text-3xl md:leading-none mt-6 mb-8">
+		Il mio percorso
+	</h2>
+
+	<div class="mx-auto max-w-2xl">
+		<Armonica />
+	</div>
+</section>
+
+<section class="relative mt-8">
+	<div class="w-full">
+		<img src="/homepage.jpg" alt="aaa" class="object-cover w-full h-[500px] filter brightness-75" />
+	</div>
+
+	<div class="absolute top-0 bottom-0 flex flex-col justify-center max-w-lg p-4 pl-8">
+		<p class="text-lg text-white">Il mio metodo, la mia passione</p>
+		<p class="text-2xl text-white font-semibold">
+			L‘armonia dei nostri movimenti, l’equilibrio delle nostre azioni sul tappetino e quindi il
+			controllo di gesti e parole nella vita quotidiana
+		</p>
+	</div>
+</section>
+
+<section class="px-[18px] py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+	<h1 class="text-3xl font-semibold md:text-[35px] mb-4 text-nowrap">Metodo di allenamento</h1>
+	<div class="container px-4 mx-auto">
+		<!-- heading -->
+		<div class="flex gap-6 max-w-7xl mt-4">
+			<div class="basis-1/2 text-center lg:text-start">
+				<div class="h-full flex flex-col items-center justify-center text-center">
+					<div class="flex justify-center items-center w-full gap-8">
+						<!-- card starts -->
+						<div class="basis-1/2 mb-8 text-center">
+							<Card />
+						</div>
+						<!-- card ends -->
+						<!-- card starts -->
+						<div class="basis-1/2 mb-8 text-center">
+							<Card />
+						</div>
+						<!-- card ends -->
+					</div>
+					<div class="flex justify-center items-center w-full gap-8">
+						<!-- card starts -->
+						<div class="basis-1/2 text-center">
+							<Card />
+						</div>
+						<!-- card ends -->
+						<!-- card starts -->
+						<div class="basis-1/2 text-center">
+							<Card />
+						</div>
+						<!-- card ends -->
+					</div>
+				</div>
+			</div>
+			<div class="basis-1/2 flex flex-col justify-center">
+				<div class="w-full">
+					<img src="/homepage.jpg" alt="" class="w-full h-[500px] object-cover rounded-xl" />
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="relative px-4 border-[18px] border-black">
-	<div class="fade-on-scroll absolute top-2 left-2 font-semibold">*Manifesto</div>
-
-	<div class="w-full text-center mt-10 mb-32 lg:mt-20 lg:mb-64 leading-[16vw]">
-		<div class="fade-on-scroll text-[25vw] leading-[19vw]">We are</div>
-		<div class="fade-on-scroll text-[19vw]">a diverse</div>
-		<div class="fade-on-scroll text-[10vw] tracking-tight leading-none text-amber-600 filter sepia-[50%]">group of humans</div>
-	</div>
-
-	<div class="ml-[30vw] lg:ml-[70vw] mb-24 lg:mb-48 leading-[8vw]">
-		<div class="fade-on-scroll text-[6vw] lg:text-3xl">engaging in many</div>
-		<div class="fade-on-scroll text-[6vw] lg:text-3xl tracking-tight italic">types of movement,</div>
-	</div>
-
-	<div class="leading-[7vw] tracking-tighter mb-24 lg:mb-64">
-		<div class="fade-on-scroll text-[7vw] lg:text-5xl">with the intention of</div>
-		<div class="fade-on-scroll text-[7vw] lg:text-5xl font-semibold">learning more about</div>
-		<div class="fade-on-scroll text-[15vw] leading-[10vw] italic">ourselves,</div>
-	</div>
-
-	<div class="leading-[11vw] mb-32 lg:mb-64">
-		<div class="fade-on-scroll text-[12vw] flex gap-2 lg:gap-8">
-			both <div class="italic underline underline-offset-8 mt-4 lg:mt-8 text-amber-600 filter sepia-[50%]">physically</div>
-		</div>
-		<div class="fade-on-scroll text-[13vw] font-[500] flex gap-4 lg:gap-16	">
-			and <div class="italic underline underline-offset-8 mt-2 lg:mt-6 text-amber-600 filter sepia-[50%]">mentally</div>
-		</div>
-	</div>
-
-	<div class="mb-16 lg:mb-32">
-		<div class="fade-on-scroll text-[5vw] tracking-tight leading-none italic">
-			We are dancers and photographers,
-		</div>
-		<div class="fade-on-scroll text-[5vw] tracking-wide leading-none text-right font-mono">accountants and managers,</div>
-		<div class="fade-on-scroll text-[5vw] leading-none italic font-serif">architects and builders alike.</div>
-	</div>
-
-	<div class="leading-[10vw] mb-8 lg:mb-20">
-		<div class="fade-on-scroll text-[10vw] tracking-tighter">we are here to learn</div>
-		<div class="fade-on-scroll text-[13vw] tracking-tighter flex gap-3 lg:gap-8 items-baseline">and
-			<div class="fade-on-scroll lg:text-[16vw] italic text-amber-600 filter sepia-[50%]">
-				experience.
-			</div>
-			</div>
-	</div>
-</section>
-
-<section class="relative h-96 pt-8 pb-14">
-	<div
-		class="absolute bg-center top-0 left-0 h-full w-full z-[-1] bg-cover bg-no-repeat filter sepia contrast-50"
-		style:background-image="url(/homepage.jpg)"
-	/>
-
-	<div
-		class="absolute bottom-4 right-4 p-3  filter sepia font-bold shadow-lg border-4 border-black backdrop-blur-sm"
-	>
-		<button> Unisciti a noi</button>
-	</div>
-</section>
-
 <style>
 	.fade-on-scroll {
 		animation: fade-on-scroll linear both;
-  		animation-timeline: view();
+		animation-timeline: view();
 		animation-range: entry 0% contain 20%;
 	}
 
