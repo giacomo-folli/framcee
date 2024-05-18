@@ -1,11 +1,11 @@
 <script lang="ts"></script>
 
-<section class="ezy__copyright6 light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+<section class="w-full light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
 	<div class="text-center lg:text-start py-12">
-		<div class="container px-16 md:px-8 lg:px-28">
+		<div class="mx-auto container px-16 md:px-8 lg:px-12">
 			<div class="grid grid-cols-12 justify-between items-center">
 				<div class="col-span-12 lg:col-span-4">
-					<img src="/logo.png" alt="logo-footer" width="40px" >
+					<img src="/logo.png" alt="logo-footer" width="40px" />
 				</div>
 				<div class="col-span-12 lg:col-span-4">
 					<ul class="flex justify-center">
