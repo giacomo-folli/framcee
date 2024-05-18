@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let open: boolean = false;
+</script>
+
 <div class="py-2 text-black relative bg-opacity-45 backdrop-blur-lg">
 	<nav>
 		<div class="w-full px-4">
@@ -5,7 +9,12 @@
 				<a class="font-black text-3xl min-w-[33%] overflow-hidden pl-2" href="/">
 					<img src="/2.png" alt="logo-navbar" class="h-[60px]" />
 				</a>
-				<button class="block lg:hidden cursor-pointer h-10 z-20" type="button" id="hamburger">
+				<button
+					class="block lg:hidden cursor-pointer h-10 z-20"
+					type="button"
+					id="hamburger"
+					on:click={() => (open = !open)}
+				>
 					<div class="h-0.5 w-7 bg-black -translate-y-2"></div>
 					<div class="h-0.5 w-7 bg-black"></div>
 					<div class="h-0.5 w-7 bg-black translate-y-2"></div>
