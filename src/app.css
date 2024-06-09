@@ -4,4 +4,35 @@
 
 :root {
 	scroll-behavior: smooth;
+	font-family: 'Roboto';
+}
+
+h5 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+.p-normal {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 120%;
+	text-align: center;
+}
+
+.text-semibold {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	text-align: center;
 }

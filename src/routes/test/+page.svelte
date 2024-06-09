@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import Armonica from "$lib/components/common/Armonica.svelte";
+
+</script>
 
 <section class="py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
 	<div class="container px-10 md:px-8 lg:px-28">
@@ -62,5 +65,15 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="px-[18px] mt-4 mb-20">
+	<h2 class="text-lg text-center font-bold leading-none md:text-3xl md:leading-none mt-6 mb-8">
+		Il mio percorso
+	</h2>
+
+	<div class="mx-auto max-w-2xl">
+		<Armonica />
 	</div>
 </section>

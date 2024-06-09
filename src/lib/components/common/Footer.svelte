@@ -5,7 +5,7 @@
 		<div class="mx-auto container px-16 md:px-8 lg:px-12">
 			<div class="grid grid-cols-12 justify-between items-center">
 				<div class="col-span-12 lg:col-span-4">
-					<img src="/logo.png" alt="logo-footer" width="40px" />
+					<!-- <img src="/logo.png" alt="logo-footer" width="40px" /> -->
 				</div>
 				<div class="col-span-12 lg:col-span-4">
 					<ul class="flex justify-center">
@@ -13,10 +13,10 @@
 							<a class="hover:opacity-80" href="/">Home</a>
 						</li>
 						<li class="my-2 mx-4">
-							<a class="hover:opacity-80" href="/classi">Classi</a>
+							<a class="hover:opacity-80" href="/servizi">Servizi</a>
 						</li>
 						<li class="my-2 mx-4">
-							<a class="hover:opacity-80" href="/about">About</a>
+							<a class="hover:opacity-80" href="/contatti">Contatti</a>
 						</li>
 					</ul>
 				</div>

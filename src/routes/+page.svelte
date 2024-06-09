@@ -1,87 +1,113 @@
 <script lang="ts">
 	import Armonica from '$lib/components/common/Armonica.svelte';
+	import Avatars from '$lib/components/common/Avatars.svelte';
 	import Card from '$lib/components/common/Card.svelte';
+	import Feature from '$lib/components/common/Feature.svelte';
 	import Features from '$lib/components/common/Features.svelte';
 </script>
 
-<section class="relative">
-	<div class="flex flex-col lg:flex-row justify-center items-center min-h-[100vh] pt-4 pb-4">
-		<div id="slogan" class="text-center text-[12vw] lg:text-[5vw] font-semibold leading-tight">
-			“Ritorna in controllo <br /> del tuo corpo”
+<section id="hero-section">
+	<div
+		class="mx-auto max-w-3xl text-center flex flex-col gap-6 justify-center items-center min-h-[100vh]"
+	>
+		<div>
+			<p class="font-semibold text-lg tracking-wide">Libera il tuo potenziale con</p>
+			<h1 id="slogan" class="font-bold text-5xl">Francesco Bernini</h1>
+		</div>
+		<p class="px-10">
+			Sperimenta un programma di allenamento trasformativo che si concentra su mobilità, forza,
+			flessibilità e coordinazione. Unisciti a Francesco Bernini per raggiungere nuovi limiti.
+		</p>
+		<div class="flex justify-center items-center gap-4">
+			<button class="p-2 border border-black">Scoprio di più</button>
+			<button class="p-2 bg-black text-white">Prenota una lezione grautita</button>
 		</div>
 	</div>
 </section>
 
-<section class="relative px-[18px] py-14 md:pt-24">
-	<section class="light lg:pb-0 bg-white text-zinc-900">
-		<div class="mx-auto container px-4">
-			<div class="grid grid-cols-12 md:gap-8">
-				<div class="col-span-12 md:col-span-6">
-					<div class="flex justify-center items-center relative h-[500px]">
-						<img src="/logo.png" class="max-w-full h-[500px] rounded-xl" alt="aa" />
-					</div>
+<section id="image-section">
+	<div class="my-8 px-20 max-h-[80vh] overflow-hidden rounded-sm">
+		<img width="100%" src="/homepage.jpg" alt="foto" class="object-bottom shadow-xl" />
+	</div>
+</section>
+
+<section id="section-3" class="relative px-[25px] py-14 md:pt-24">
+	<div class="flex items-center">
+		<div class="basis-1/2 flex justify-center items-center">
+			<img
+				src="/homepage.jpg"
+				alt="foto"
+				class="h-[500px] w-[600px] object-cover rounded-sm shadow-lg"
+			/>
+		</div>
+		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center items-center">
+			<p class="font-bold text-4xl max-w-xl">
+				Libera il tuo pieno potenziale grazie ad un approccio olistico
+			</p>
+			<p class="text-lg max-w-xl">
+				Credo che la vera forza derivi dalla cura della mente e del corpo. Con la mia esperienza in
+				mobilità, forza, flessibilità e coordinazione, ti guiderò verso il raggiungimento dei tuoi
+				obiettivi.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section id="features-section" class="px-[18px]">
+	<div class="mt-32 mb-10">
+		<div class="w-full text-center text-4xl font-bold mb-10">
+			Impara a sfruttare il 100% del tuo corpo
+		</div>
+		<div class="p-8 flex justify-center gap-4">
+			<Feature />
+		</div>
+	</div>
+</section>
+
+<section id="section-3" class="relative px-[25px] py-14 md:pt-24">
+	<div class="flex items-center justify-center">
+		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
+			<div class="mb-2">
+				<p class="font-semibold text-sm">Trasformazione</p>
+				<p class="p-normal">
+					Experience a holistic approach to training that focuses on developing your mind and body.
+					With Francesco, you'll improve your mobility, strength, flexibility, and coordination,
+					leading to overall growth and well-being.
+				</p>
+			</div>
+
+			<div class="flex">
+				<div>
+					<h5>Approccio olistico</h5>
+					<p class="p-normal">
+						Ricevi un'attenzione e una guida personalizzate per raggiungere i tuoi obiettivi di
+						fitness in modo efficace.
+					</p>
 				</div>
-				<div class="col-span-12 md:col-span-6 flex flex-col justify-between">
-					<div class="mt-6 md:mt-0">
-						<h3 class="text-2xl md:text-base">Chi sono</h3>
-						<h2 class="text-2xl font-bold leading-none md:text-5xl md:leading-none mb-6">
-							Francesco, la mia storia
-						</h2>
-						<p
-							class="text-base sm:text-lg leading-relaxed tracking-wide break-words mt-4 md:mt-12 opacity-75 md:max-h-64 overflow-hidden"
-						>
-							I am a website designer from Lousiana, with a strong focus in UI/UX design. I love to
-							get new experiences and always learn from my surroundings. I've done more than 285
-							projects. You can check it through portfolio section on this website. I looking
-							forward to any opportunities and challenges. Ex velit cupidatat magna voluptate
-							deserunt quis et dolor adipisicing elit culpa ad exercitation proident irure deserunt
-							irure. I look forward to any opportunities and challenges.
-						</p>
-					</div>
-					<div class="grid grid-cols-12">
-						<div class="col-span-12 lg:col-span-4">
-							<button
-								class="py-3 px-7 text-white bg-blue-600 hover:text-white hover:bg-opacity-90 w-full rounded-md"
-							>
-								Read More
-							</button>
-						</div>
-					</div>
+				<div>
+					<h5>Programmi personalizzati</h5>
+					<p class="p-normal">
+						Sviluppa la tua mente e il tuo corpo attraverso programmi di allenamento personalizzati
+						in base alle tue esigenze.
+					</p>
 				</div>
 			</div>
 		</div>
-	</section>
-</section>
-
-<section class="px-[18px] mt-4 mb-20">
-	<h2 class="text-lg text-center font-bold leading-none md:text-3xl md:leading-none mt-6 mb-8">
-		Il mio percorso
-	</h2>
-
-	<div class="mx-auto max-w-2xl">
-		<Armonica />
+		<div class="basis-1/2 flex justify-center items-center">
+			<img
+				src="/homepage.jpg"
+				alt="foto"
+				class="h-[500px] w-[600px] object-cover rounded-sm shadow-lg"
+			/>
+		</div>
 	</div>
 </section>
 
-<section class="relative mt-8">
-	<div class="w-full">
-		<img src="/homepage.jpg" alt="aaa" class="object-cover w-full h-[500px] filter brightness-75" />
+<section id="net-section" class="py-28">
+	<h2 class="mb-20">Ho collaborato con</h2>
+	<div>
+		<Avatars />
 	</div>
-
-	<div class="absolute top-0 bottom-0 flex flex-col justify-center max-w-lg p-4 pl-8">
-		<p class="text-lg text-white">Il mio metodo, la mia passione</p>
-		<p class="text-2xl text-white font-semibold">
-			‘Costruire la conoscenza del proprio corpo attraverso l'esplorazione delle sue capacità di movimento in
-			maniera giocosa e consapevole.’
-		</p>
-	</div>
-</section>
-
-<section class="py-24">
-	<h2 class="text-lg text-center font-bold leading-none md:text-3xl md:leading-none mt-6 mb-12">
-		Metodo di allenamento
-	</h2>
-	<Features />
 </section>
 
 <style>
