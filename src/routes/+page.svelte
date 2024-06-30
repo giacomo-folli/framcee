@@ -19,8 +19,12 @@
 		</p>
 
 		<div class="flex justify-center items-center gap-4">
-			<button class="p-2 border border-black">Scoprio di più</button>
-			<button class="p-2 bg-black text-white">Prenota una lezione grautita</button>
+			<button class="btn btn-sm rounded-sm bg-white hover:bg-white border-black"
+				>Scoprio di più</button
+			>
+			<button class="btn btn-sm rounded-sm bg-black hover:bg-black text-white"
+				>Prenota una lezione grautita</button
+			>
 		</div>
 	</div>
 </section>

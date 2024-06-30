@@ -1,5 +1,4 @@
 import daisyui from 'daisyui';
-import { fontFamily } from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -24,7 +23,7 @@ const config = {
 			}
 		}
 	},
-	plugins: [daisyui]
+	plugins: [daisyui, require('@tailwindcss/typography')]
 };
 
 export default config;

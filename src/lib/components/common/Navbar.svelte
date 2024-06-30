@@ -1,14 +1,12 @@
 <script lang="ts">
-	import ChevronDown from '../Icons/ChevronDown.svelte';
-
 	export let open: boolean = false;
 </script>
 
 <div class="text-black bg-white">
 	<nav>
-		<div class="w-full flex items-center p-3 justify-between">
+		<div class="w-full flex items-center p-2 justify-between">
 			<div class="flex items-center gap-4">
-				<div class="font-bold text-2xl bg-black text-white p-1 px-3">
+				<div class="font-bold text-2xl bg-black text-white p-1 px-3.5">
 					<a href="/"> F </a>
 				</div>
 
@@ -21,9 +19,9 @@
 				</button> -->
 			</div>
 
-			<div>
+			<div class="flex gap-4">
 				<button
-					class="transition border border-black hover:bg-black hover:text-white rounded-sm px-4 py-1.5 hidden md:block"
+					class="btn btn-sm btn-ghost bg-black text-white hover:bg-black rounded-sm py-none h-fit hidden md:block"
 				>
 					Prossime sessioni
 				</button>
