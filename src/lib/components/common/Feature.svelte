@@ -9,7 +9,7 @@
 		<h1 class="font-bold text-2xl text-center">
 			Migliora la flessibilità e l’efficienza del tuo corpo
 		</h1>
-		<p class=" text-lg text-center">
+		<p class="text-lg text-center">
 			Il mio allenamento per la mobilità si concentra sul miglioramento della gamma di movimenti e
 			della flessibilità, consentendo di muoversi con facilità e di prevenire gli infortuni.
 		</p>

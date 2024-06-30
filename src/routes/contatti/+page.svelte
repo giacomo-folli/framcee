@@ -13,7 +13,7 @@
 </div>
 
 <section class="relative px-[25px] py-14 md:py-24">
-	<div class="mx-auto flex justify-between items-center max-w-5xl">
+	<div class="mx-auto flex flex-col md:flex-row justify-between items-center max-w-5xl">
 		<div class="flex flex-col gap-6 items-start prose">
 			<div>
 				<h3 class="">
@@ -40,15 +40,16 @@
 			</div>
 		</div>
 
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.15071341901!2d9.994262475811768!3d44.81849417107069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780610fc6baf70f%3A0xeef1cc54b70ac796!2sWeMove%20Personal%20Training%20Center!5e0!3m2!1sit!2sit!4v1719758259704!5m2!1sit!2sit"
-			width="600"
-			height="450"
-			style="border:0;"
-			allowfullscreen={true}
-			loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade"
-		></iframe>
+		<div class="pt-20">
+			<iframe
+				class="w-[350px] h-[350px] md:w-[600px] md:h-[450px]"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.15071341901!2d9.994262475811768!3d44.81849417107069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4780610fc6baf70f%3A0xeef1cc54b70ac796!2sWeMove%20Personal%20Training%20Center!5e0!3m2!1sit!2sit!4v1719758259704!5m2!1sit!2sit"
+				style="border:0;"
+				allowfullscreen={true}
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</div>
 	</div>
 </section>
 
@@ -106,7 +107,7 @@
 <section class="relative px-[25px] py-14 md:py-24 w-full flex justify-center">
 	<div class="join join-vertical w-full max-w-3xl">
 		<div class="collapse collapse-arrow join-item border-base-300 border">
-			<input type="radio" name="my-accordion-4"/>
+			<input type="radio" name="my-accordion-4" />
 			<div class="collapse-title text-xl font-medium"># Domanda 1</div>
 			<div class="collapse-content">
 				<p>Risposta</p>

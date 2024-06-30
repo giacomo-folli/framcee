@@ -46,9 +46,9 @@
 		</div>
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center items-center">
 			<p class="font-bold text-4xl max-w-xl">
-				Libera il tuo pieno potenziale grazie ad un approccio olistico
+				Libera il tuo potenziale grazie ad un approccio olistico
 			</p>
-			<p class="text-lg max-w-xl">
+			<p class="text-lg max-w-xl mb-6">
 				Credo che la vera forza derivi dalla cura della mente e del corpo. Con la mia esperienza in
 				mobilità, forza, flessibilità e coordinazione, ti guiderò verso il raggiungimento dei tuoi
 				obiettivi.
@@ -57,16 +57,16 @@
 	</div>
 </section>
 
-<section id="net-section" class="pt-28 pb-20">
-	<h2 class="text-center font-bold text-4xl mb-20">Ho collaborato con</h2>
+<section id="net-section" class="pt-14 md:pt-28 pb-6 md:pb-20">
+	<h2 class="text-center font-bold text-4xl mb-6 md:mb-20">Ho collaborato con</h2>
 	<div>
 		<Avatars />
 	</div>
 </section>
 
 <section id="features-section" class="px-[18px]">
-	<div class="mt-32 mb-10 mx-auto flex flex-col items-center">
-		<div class="w-full text-center text-4xl font-bold mb-10">
+	<div class="mt-20 md:mt-32 mb-10 mx-auto flex flex-col items-center">
+		<div class="w-full text-pretty md:text-center text-4xl font-bold mb-10">
 			Impara a sfruttare il 100% del tuo corpo
 		</div>
 		<div class="mx-auto p-8 flex flex-col md:flex-row justify-center gap-4">
@@ -75,11 +75,11 @@
 	</div>
 </section>
 
-<section id="section-3" class="relative px-[25px] py-14 md:pt-24">
+<section id="section-3" class="relative px-[25px] py-6 md:py-14 md:pt-24">
 	<div class="flex flex-col-reverse md:flex-row items-center justify-center">
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
 			<div class="mb-2">
-				<p class="font-semibold text-sm">Trasformazione</p>
+				<p class="font-semibold text-sm py-3">Trasformazione</p>
 				<p class="p-normal">
 					Experience a holistic approach to training that focuses on developing your mind and body.
 					With Francesco, you'll improve your mobility, strength, flexibility, and coordination,
@@ -87,16 +87,16 @@
 				</p>
 			</div>
 
-			<div class="flex">
+			<div class="flex flex-col gap-3">
 				<div>
-					<h5>Approccio olistico</h5>
+					<h5 class="font-semibold">Approccio olistico</h5>
 					<p class="p-normal">
 						Ricevi un'attenzione e una guida personalizzate per raggiungere i tuoi obiettivi di
 						fitness in modo efficace.
 					</p>
 				</div>
 				<div>
-					<h5>Programmi personalizzati</h5>
+					<h5 class="font-semibold">Programmi personalizzati</h5>
 					<p class="p-normal">
 						Sviluppa la tua mente e il tuo corpo attraverso programmi di allenamento personalizzati
 						in base alle tue esigenze.

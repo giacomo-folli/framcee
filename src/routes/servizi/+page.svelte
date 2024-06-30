@@ -11,7 +11,7 @@
 </div>
 
 <section id="section-3" class="relative px-[25px] py-14 md:py-24">
-	<div class="flex items-center gap-8">
+	<div class="flex flex-col md:flex-row items-center gap-8">
 		<div class="basis-1/2 flex justify-center items-center">
 			<img
 				src="/homepage.jpg"
@@ -44,7 +44,7 @@
 </section>
 
 <section id="section-3" class="relative px-[25px] py-14 md:pb-24">
-	<div class="flex items-center justify-center">
+	<div class="flex flex-col md:flex-row items-center justify-center">
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
 			<div class="mb-2">
 				<p class="font-semibold text-sm">Trasformazione</p>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="basis-1/2 flex justify-center items-center">
+		<div class="basis-1/2 flex justify-center items-center pt-10 md:pt-none">
 			<img
 				src="/homepage.jpg"
 				alt="foto"
@@ -84,7 +84,7 @@
 </section>
 
 <section id="section-3" class="relative px-[25px] py-14 md:pb-24">
-	<div class="flex items-center justify-center">
+	<div class="flex flex-col md:flex-row items-center justify-center">
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
 			<div class="mb-2">
 				<p class="font-semibold text-sm">Trasformazione</p>
@@ -113,7 +113,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="basis-1/2 flex justify-center items-center">
+		<div class="basis-1/2 flex justify-center items-center pt-10 md:pt-none">
 			<img
 				src="/homepage.jpg"
 				alt="foto"
@@ -125,7 +125,7 @@
 
 <section id="section-3" class="relative px-[25px] py-14 md:py-24">
 	<div class="flex flex-col items-center justify-center">
-		<div class="w-full flex gap-4 justify-start">
+		<div class="w-full flex flex-col md:flex-row gap-4 justify-start">
 			<div class="basis-1/2 mb-2">
 				<p class="font-bold text-4xl mb-2">Allenamento di Mobilità</p>
 				<p class="font-semibold text-sm">Trasformazione</p>
