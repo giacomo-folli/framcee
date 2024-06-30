@@ -1,9 +1,6 @@
 <script lang="ts">
-	import Armonica from '$lib/components/common/Armonica.svelte';
 	import Avatars from '$lib/components/common/Avatars.svelte';
-	import Card from '$lib/components/common/Card.svelte';
 	import Feature from '$lib/components/common/Feature.svelte';
-	import Features from '$lib/components/common/Features.svelte';
 </script>
 
 <section id="hero-section">
@@ -14,10 +11,12 @@
 			<p class="font-semibold text-lg tracking-wide">Libera il tuo potenziale con</p>
 			<h1 id="slogan" class="font-bold text-5xl">Francesco Bernini</h1>
 		</div>
+
 		<p class="px-10">
 			Sperimenta un programma di allenamento trasformativo che si concentra su mobilità, forza,
 			flessibilità e coordinazione. Unisciti a Francesco Bernini per raggiungere nuovi limiti.
 		</p>
+
 		<div class="flex justify-center items-center gap-4">
 			<button class="p-2 border border-black">Scoprio di più</button>
 			<button class="p-2 bg-black text-white">Prenota una lezione grautita</button>
@@ -32,7 +31,7 @@
 </section>
 
 <section id="section-3" class="relative px-[25px] py-14 md:pt-24">
-	<div class="flex items-center">
+	<div class="flex flex-col-reverse md:flex-row items-center">
 		<div class="basis-1/2 flex justify-center items-center">
 			<img
 				src="/homepage.jpg"
@@ -53,19 +52,26 @@
 	</div>
 </section>
 
+<section id="net-section" class="pt-28 pb-20">
+	<h2 class="text-center font-bold text-4xl mb-20">Ho collaborato con</h2>
+	<div>
+		<Avatars />
+	</div>
+</section>
+
 <section id="features-section" class="px-[18px]">
-	<div class="mt-32 mb-10">
+	<div class="mt-32 mb-10 mx-auto flex flex-col items-center">
 		<div class="w-full text-center text-4xl font-bold mb-10">
 			Impara a sfruttare il 100% del tuo corpo
 		</div>
-		<div class="p-8 flex justify-center gap-4">
+		<div class="mx-auto p-8 flex flex-col md:flex-row justify-center gap-4">
 			<Feature />
 		</div>
 	</div>
 </section>
 
 <section id="section-3" class="relative px-[25px] py-14 md:pt-24">
-	<div class="flex items-center justify-center">
+	<div class="flex flex-col-reverse md:flex-row items-center justify-center">
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
 			<div class="mb-2">
 				<p class="font-semibold text-sm">Trasformazione</p>
@@ -103,11 +109,10 @@
 	</div>
 </section>
 
-<section id="net-section" class="py-28">
-	<h2 class="mb-20">Ho collaborato con</h2>
-	<div>
-		<Avatars />
-	</div>
+<section class="py-16 w-full flex justify-center">
+	<button class="btn btn-primary bg-info-content border-none text-white"
+		>Scopri tutti i servizi che offro!
+	</button>
 </section>
 
 <style>

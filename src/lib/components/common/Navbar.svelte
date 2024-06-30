@@ -23,7 +23,7 @@
 
 			<div>
 				<button
-					class="transition border border-black hover:bg-black hover:text-white rounded-sm px-4 py-1.5"
+					class="transition border border-black hover:bg-black hover:text-white rounded-sm px-4 py-1.5 hidden md:block"
 				>
 					Prossime sessioni
 				</button>
