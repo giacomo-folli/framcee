@@ -1,5 +1,5 @@
 <div class="w-full pt-20 pb-6 text-center text-3xl">About</div>
-<main class="p-4 pt-2 h-[40vh] text-slate-300">
+<main class="p-4 pt-2 h-[60vh] text-slate-300 flex justify-center">
 	<svg height="200px" width="100%">
 		<line x1="0" y1="4" x2="400" y2="4" />
 		<line x1="0" y1="34" x2="200" y2="34" />

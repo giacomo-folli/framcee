@@ -7,7 +7,7 @@
 				<div class="col-span-12 lg:col-span-4">
 					<!-- <img src="/logo.png" alt="logo-footer" width="40px" /> -->
 				</div>
-				<div class="col-span-12 lg:col-span-4">
+				<!-- <div class="col-span-12 lg:col-span-4">
 					<ul class="flex justify-center">
 						<li class="my-2 mx-4">
 							<a class="hover:opacity-80" href="/">Home</a>
@@ -19,19 +19,19 @@
 							<a class="hover:opacity-80" href="/contatti">Contatti</a>
 						</li>
 					</ul>
-				</div>
-				<div class="col-span-12 lg:col-span-4 flex justify-center lg:justify-end">
+				</div> -->
+				<div class="col-span-12 flex justify-center gap-4 lg:justify-center">
 					<ul class="ezy__copyright1-social flex">
-						<li class="m-2">
+						<li class="mx-2">
 							<a href="" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
 						</li>
-						<li class="m-2">
+						<li class="mx-2">
 							<a href="" class="hover:text-blue-600"><i class="fab fa-twitter"></i></a>
 						</li>
-						<li class="m-2">
+						<li class="mx-2">
 							<a href="" class="hover:text-blue-600"><i class="fab fa-instagram"></i></a>
 						</li>
-						<li class="m-2">
+						<li class="mx-2">
 							<a href="" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
 						</li>
 					</ul>
