@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import Avatars from '$lib/components/common/Avatars.svelte';
 	import Feature from '$lib/components/common/Feature.svelte';
 </script>
@@ -110,7 +111,9 @@
 </section>
 
 <section class="py-16 w-full flex justify-center">
-	<button class="btn btn-primary bg-info-content border-none text-white"
+	<button
+		on:click={() => goto('/servizi')}
+		class="btn btn-primary bg-info-content border-none text-white"
 		>Scopri tutti i servizi che offro!
 	</button>
 </section>
