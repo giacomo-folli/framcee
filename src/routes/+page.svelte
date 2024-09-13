@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import Avatars from '$lib/components/common/Avatars.svelte';
 	import Feature from '$lib/components/common/Feature.svelte';
+	import TextAndImage from '$lib/components/common/TextAndImage.svelte';
 </script>
 
 <section id="hero-section">
@@ -30,32 +31,23 @@
 </section>
 
 <section id="image-section">
-	<div class="my-8 px-20 max-h-[80vh] overflow-hidden rounded-sm">
-		<img width="100%" src="/homepage.jpg" alt="foto" class="object-bottom shadow-xl" />
+	<div class="w-full lg:my-8 px-4 md:px-20 lg:max-h-[80vh] overflow-hidden">
+		<img width="100%" src="/homepage.jpg" alt="foto" class="object-bottom shadow-xl rounded-md" />
 	</div>
 </section>
 
-<section id="section-3" class="relative px-[25px] py-14 md:pt-24">
-	<div class="flex flex-col-reverse md:flex-row items-center">
-		<div class="basis-1/2 flex justify-center items-center">
-			<img
-				src="/homepage.jpg"
-				alt="foto"
-				class="h-[500px] w-[600px] object-cover rounded-sm shadow-lg"
-			/>
-		</div>
-		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center items-center">
-			<p class="font-bold text-4xl max-w-xl">
-				Libera il tuo potenziale grazie ad un approccio olistico
-			</p>
-			<p class="text-lg max-w-xl mb-6">
-				Credo che la vera forza derivi dalla cura della mente e del corpo. Con la mia esperienza in
-				mobilità, forza, flessibilità e coordinazione, ti guiderò verso il raggiungimento dei tuoi
-				obiettivi.
-			</p>
-		</div>
+<TextAndImage src="/homepage.jpg" alt="foto" reversed={true}>
+	<div slot="text">
+		<p class="font-bold text-4xl max-w-xl">
+			Libera il tuo potenziale grazie ad un approccio olistico
+		</p>
+		<p class="text-lg max-w-xl mb-6">
+			Credo che la vera forza derivi dalla cura della mente e del corpo. Con la mia esperienza in
+			mobilità, forza, flessibilità e coordinazione, ti guiderò verso il raggiungimento dei tuoi
+			obiettivi.
+		</p>
 	</div>
-</section>
+</TextAndImage>
 
 <section id="net-section" class="pt-14 md:pt-28 pb-6 md:pb-20">
 	<h2 class="text-center font-bold text-4xl mb-6 md:mb-20">Ho collaborato con</h2>
@@ -75,8 +67,8 @@
 	</div>
 </section>
 
-<section id="section-3" class="relative px-[25px] py-6 md:py-14 md:pt-24">
-	<div class="flex flex-col-reverse md:flex-row items-center justify-center">
+<TextAndImage src="/homepage.jpg" alt="foto" reversed>
+	<div slot="text">
 		<div class="basis-1/2 w-full flex flex-col gap-4 justify-center max-w-lg">
 			<div class="mb-2">
 				<p class="font-semibold text-sm py-3">Trasformazione</p>
@@ -104,15 +96,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="basis-1/2 flex justify-center items-center">
-			<img
-				src="/homepage.jpg"
-				alt="foto"
-				class="h-[500px] w-[600px] object-cover rounded-sm shadow-lg"
-			/>
-		</div>
 	</div>
-</section>
+</TextAndImage>
 
 <section class="py-16 w-full flex justify-center">
 	<button

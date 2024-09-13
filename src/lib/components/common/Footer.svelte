@@ -41,14 +41,8 @@
 	</div>
 </section>
 
-<footer class="px-16 md:px-8 lg:px-28 p-4 bottom-0 left-0 w-full bg-black text-slate-100">
-	<div class="py-2 text-sm w-full text-left">
-		<span>&copy; 2024 Francesco Bernini, All rights reserved | </span>
-		<span>
-			Made by
-			<a class="underline" href="https://github.com/giacomo-folli" rel="noopener" target="_blank"
-				>Giacomo Folli</a
-			>
-		</span>
+<footer class="p-2 bottom-0 left-0 w-full bg-black text-slate-100">
+	<div class="text-xs w-full text-left">
+		<span>&copy; 2024 Francesco Bernini, All rights reserved </span>
 	</div>
 </footer>
